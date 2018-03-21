@@ -1,0 +1,31 @@
+.app{ 
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    background: #fff;
+    padding: 30px;
+    height: 100vh;
+    overflow: hidden;
+    &>div{
+        display: inline-block;
+        width: 25%;
+        padding: 0 10px;
+        &:first-of-type{
+            padding-left: 0;
+        }
+        &:last-of-type{
+            padding-right: 0;
+        }
+        &>span{
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    }
+    &:after{
+        content: '';
+        display: block;
+        width: 1px;
+        height: 1px;
+        clear: both;
+    }
+}

@@ -1,0 +1,47 @@
+
+$borederThickness: 4px;
+
+.low-priority{
+    border: $borederThickness solid green;
+}
+.normal-priority{
+    border: $borederThickness solid yellow;
+}
+.high-priority{
+    border: $borederThickness solid red;
+}
+
+.todo-wrapper{
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.task{
+    margin-bottom: 10px;
+}
+
+.task-info{
+    margin-bottom: 20px;
+}
+
+.btn{
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+    outline: none;
+    margin-right: 5px;
+    padding: 5px 15px;
+    transition: 1s;
+    &:hover{
+        border: 2px solid blue;
+    }
+
+}
+
+.time{
+    font-style: italic;
+}
