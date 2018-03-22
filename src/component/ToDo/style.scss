@@ -21,10 +21,48 @@ $borederThickness: 4px;
 
 .task{
     margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    &>div{
+        word-wrap: break-word;
+        outline: none;
+    }
+}
+
+.task+button{
+    margin-bottom: 20px;
+}
+
+.pen{
+    background-image: url('../../theme/assets/pen.svg');
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
 }
 
 .task-info{
     margin-bottom: 20px;
+}
+
+.priority{
+    &>div{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    button{
+        background: none;
+        margin-right: 5px;
+        border: 1px solid gray;
+        outline: none;
+        border-radius: 50%;
+        &:active{
+            background: #BFAFAF;
+        }
+    }
 }
 
 .btn{
