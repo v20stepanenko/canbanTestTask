@@ -9,6 +9,11 @@ What is it?
 
 Uses Local storage to save cards
 
+Demo
+  -----------
+
+https://v20stepanenko.github.io/kanban/index.html
+
 Installation
   ------------
 

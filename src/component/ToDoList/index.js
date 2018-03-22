@@ -38,13 +38,6 @@ export default class ToDoList extends Component {
     )
   };
 
-  shouldComponentUpdate = (nextProps) => {
-    const { toDos } = this.props;
-    const { toDos: nextToDos } = nextProps;
-
-    return toDos.length !== nextToDos.length;
-  }
-
   sortedToDo = addToDos => {
     const highToDos = addToDos.filter(item => item.priority === 3);
     const normalToDos = addToDos.filter(item => item.priority === 2);

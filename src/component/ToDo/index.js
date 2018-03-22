@@ -120,7 +120,7 @@ export default class ToDo extends Component {
               }}
               onBlur = {(e) => {
                 e.target.setAttribute('contenteditable', 'false');
-                changeDescride(item.id, e.target.innerHTML)}}
+                changeDescride(item.id, e.target.textContent)}}
             >
               {item.description}
             </div>
